@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.navHeader{
+
+    position: relative;
+    top: 10px;
+}
+
+.navHeader ul {
+
+    
+    list-style: none;
+    padding: 0;
+
+    text-align: center;
+}
+
+.navHeader ul li {
+
+    display: inline;
+
+}
+
+.navHeader ul li a {
+
+    color: white;
+
+    padding: 10px;
+
+    text-decoration: none;
+    display: inline;
+    
+}
+
+.navHeader ul li a:hover {
+
+    color: #F26052;
+    transition: 0.4s;
+
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+    color: white;
+
+}
+
+.body{
+
+    background-color: #181818;
+
+}
+
+.titlePage {
+
+    background-color:#202020;
+
+    position: relative;
+    display: flex;
+
+    margin-top: 100px;
+
+    border-radius: 5px;
+
+    width: 90%; 
+
+}
+
+.titlePage h2 {
+
+    margin-left: 1%;
+    margin-top: 0.2%;
+
+}
+
+.svgCardTitle{
+
+    position: absolute;
+    display: flex;
+    width: 30px;
+
+    margin-right: 100%;
+
+    top: 18%;
+
+    fill: white;
+
+}
+
+.svgCardTitle{
+
+    position: absolute;
+    display: flex;
+    width: 30px;
+
+    right: 10px;
+
+    top: 18%;
+
+    fill: white;
+
+}
+
+.container{
+
+    background-color: #202020;
+
+    position: relative;
+    display: grid;
+
+    top: 20px;    
+
+    width: 80%;
+    height: auto;
+
+    margin-bottom: 2%;
+
+    border-radius: 5px;
+
+}
+
+.containerSpan{
+
+    background-color: none;
+
+    position: relative;
+    
+    top: 10px;
+
+    height: auto;
+
+    padding: 10px;
+    margin: 30px;
+
+}
+
+.containerSpanCard{
+
+    /*background-color: #181818;*/
+
+    
+    border-radius: 5px;
+
+    border: 2px solid #202020;
+    position: relative;
+
+    width: 300px;
+    height: 115px;
+
+    text-align: center;
+    
+}
+
+.iconCard {
+
+    background-color: #181818;
+
+    border: 2px solid #181818;
+    border-radius: 5px;
+
+    position: relative;
+    display: flex;
+    
+    top: 5%;
+    
+    width: 250px;
+    height: 100px;
+
+}
+
+        .iconCard:hover {
+
+            border: 2px solid #F26052;
+
+            transition: 0.3s;
+
+        }
+
+
+
+.svgCard {
+
+    background-color: none;
+
+    fill: currentColor;
+
+    position: relative;
+    display: flex;
+    
+    top: 25%;
+
+    height: 50px;
+    width: 50px;
+
+}
+
+        .svgCard:hover {
+
+            fill: #F26052;
+
+            transition: 0.3s;
+
+        }
+
+
+
+.titleCard {
+
+    background-color: none;
+
+    position: relative;
+    display: flex;
+
+    top: 10%;
+    
+    width: 83.5%;
+
+    font-size: 22px;
+
+}
+
+.descriptionCard {
+
+    background-color: none;
+
+    position: relative;
+    display: flex;
+
+    top: 15%;
+
+    width: 83.5%;
+    height: 120px;
+    
+
+    font-size: 12px;
+
+    padding: 10px;
+
+}
+
+.titleCardP {
+
+    position: relative;
+
+
+    top: 1px;
+    
+}
+
+.ancorLink {
+
+    outline: none;
+    text-decoration: none;
+
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+.Footer {
+
+    position: absolute;
+    
+    top: 95%;
+    display: block;
+    width: 99%;
+    
+}
+
+.signature {
+
+    position: absolute;
+
+    color: #535457;
+    
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    outline: none;
+    text-decoration: none;
+}
+
+.signature:hover {
+
+    color: #e6e6e6;
+
+    transition: 0.7s;
+        
+}

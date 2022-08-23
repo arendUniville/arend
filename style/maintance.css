@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.navHeader{
+
+    position: relative;
+    top: 10px;
+
+}
+
+.navHeader ul {
+
+    
+    list-style: none;
+    padding: 0;
+
+    text-align: center;
+}
+
+.navHeader ul li {
+    display: inline;
+}
+
+.navHeader ul li a {
+
+    color: white;
+
+    padding: 10px;
+
+    text-decoration: none;
+    display: inline;
+
+    
+}
+
+.navHeader ul li a:hover {
+    color: #F26052;
+    transition: 0.4s;
+}
+
+
+/* -------------------------------------------------------------- */
+
+    
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+    color: white;
+
+}
+
+.body{
+
+    background-color: #181818;
+
+}
+
+.titlePage {
+
+    background-color:#202020;
+
+    position: relative;
+    display: flex;
+
+    margin-top: 100px;
+
+    border-radius: 5px;
+
+    width: 90%; 
+
+}
+
+.titlePage h2 {
+
+    margin-left: 1%;
+    margin-top: 0.2%;
+
+}
+
+.svgCardTitle{
+
+    position: absolute;
+    display: flex;
+    width: 30px;
+
+    right: 10px;
+
+    top: 18%;
+
+    fill: white;
+
+}
+
+.container{
+
+    background-color: #202020;
+
+    position: relative;
+    display: grid;
+
+    border-radius: 5px;
+
+    top: 20px;    
+    
+    width: 80%;
+    height: auto;
+
+    margin-bottom: 2%;
+
+}
+
+.containerSpan{
+
+    background-color: none;
+
+    position: relative;
+    display: flex;
+    
+    top: 10px;
+
+    height: auto;
+
+    padding: 10px;
+    margin: 30px;
+
+}
+
+.containerSpanCard{
+
+    background-color: #181818;
+
+    border: 5px solid #181818;
+    border-radius: 5px;
+
+    position: relative;
+    display:inline;
+
+    width: 1200px;
+    height: 400px;
+    
+    text-align: center;
+    
+}   
+
+.iconCard {
+
+    background-color: #202020;
+
+    /*border: 2px solid #383838;*/
+    border-radius: 5px;
+
+    position: relative;
+    display: flex;
+    
+    top: 5%;
+    
+    width: 250px;
+    height: 150px;
+
+}
+
+.svgCard {
+
+    background-color: none;
+
+    fill: #F26052;
+
+    position: relative;
+    display: flex;
+    
+    top: 30%;
+
+    height: 100px;
+    width: 100px;
+
+}
+
+.descriptionCard {
+
+    background-color: none;
+
+    position: relative;
+    display: flex;
+
+    top: 30%;
+
+    width: 83.5%;
+    height: 120px;
+    
+
+    font-size: 12px;
+
+    padding: 10px;
+
+    cursor: default;
+
+}
+
+.titleCardP {
+
+    position: relative;
+    display: flex;
+
+    top: 6px;
+    
+}
+
+        .titleCardP:hover {
+
+            color: #F26052;
+            transition: 0.3s;
+            
+        }
+        
+
+
+.ancorLink {
+
+    outline: none;
+    text-decoration: none;
+
+}       
+
+
+/* ------------------------------------------------------------------------ */
+
+
+.Footer {
+
+    position: absolute;
+    
+    top: 95%;
+    display: block;
+    width: 99%;
+    
+}
+
+.signature {
+
+    position: absolute;
+
+    color: #535457;
+    
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    outline: none;
+    text-decoration: none;
+}
+
+.signature:hover {
+
+    color: #e6e6e6;
+
+    transition: 0.7s;
+        
+}

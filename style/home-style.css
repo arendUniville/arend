@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+
+.navHeader{
+
+    background: none;
+
+    position: relative;
+    display: flex;
+
+    top: 10px;
+
+}
+
+.navHeader ul {
+
+    
+    list-style: none;
+    padding: 0;
+
+    text-align: center;
+}
+
+.navHeader ul li {
+    display: inline;
+}
+
+.navHeader ul li a {
+
+    color: white;
+
+    padding: 10px;
+
+    text-decoration: none;
+    display: inline;
+
+    
+}
+
+.navHeader ul li a:hover {
+    color: #F26052;
+    transition: 0.4s;
+}
+
+
+/* --------------------------------------------------------------------*/
+
+
+
+.body{
+
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+
+}
+
+.eagle {
+
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
+    max-width: 600px;
+    min-width: 320px;
+    
+}
+
+.title{
+
+    background-color: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+.nav-list{
+
+    top: 0  ;
+    position: absolute;
+    background-color: none;
+    margin-left: 82.3vh;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+
+}
+
+.mobile-menu{
+
+    position: absolute;
+    display: none;
+    
+    top: 10px;
+    background: none;
+
+    cursor: pointer;
+
+}
+
+.mobile-menu div{
+
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+
+}
+
+@media (max-width: 999px){
+
+    body{
+
+        overflow-x: hidden;
+
+    }
+
+    .nav-list{
+
+        position: absolute;
+        top: 0vh;
+        right: 0;
+        width: 50vw;
+        height: 97vh;
+        background: #232323;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        opacity: 0.8;
+        z-index: 1;
+
+    }
+
+    .nav-list li{
+
+        margin-left: 0;
+        opacity: 0;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .mobile-menu{
+
+        display: block;
+
+    }
+
+    .nav-list.active{
+
+        transform: translateX(0);
+
+    }
+
+    @keyframes navLinkFade {
+
+        from{
+
+            opacity: 0;
+            transform: translateX(50px);
+
+        }to{
+
+            opacity: 1;
+            transform: translateX(0);
+
+        }
+    }
+
+    .mobile-menu.active .line1{
+
+        transform: rotate(-45deg) translate(-8px, 8px);
+
+    }
+
+    .mobile-menu.active .line2{
+
+        opacity: 0;
+        
+    }
+
+    .mobile-menu.active .line3{
+
+        transform: rotate(45deg) translate(-5px, -7px);
+        
+    }
+
+
+}
+
+.title h1{
+
+    position: relative;
+    color: #EEEEEE;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0 0 30px #000155;
+
+}
+
+.title ul {
+        
+    list-style: none;
+    padding: 0;
+
+    text-align: center;
+
+}
+
+.title ul li {
+
+    display: inline;
+
+}
+
+.title ul li a {
+
+    color: white;
+
+    padding: 10px;
+
+    text-decoration: none;
+    display: inline;
+
+
+}
+
+.title ul li a:hover {
+
+    color: #F26052;
+    transition: 0.4s;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+.Footer {
+
+    position: absolute;
+    
+    top: 95%;
+    display: block;
+    width: 99%;
+    
+}
+
+.signature {
+
+    position: absolute;
+
+    color: #535457;
+    
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    outline: none;
+    text-decoration: none;
+
+    
+}
+
+.signature:hover {
+
+    color: #e6e6e6;
+
+    text-shadow: 0 0 10px #F26052;
+
+    transition: 0.7s;
+        
+}
