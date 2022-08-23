@@ -63,6 +63,7 @@
 
 .nav-list li {
     display: inline;
+    padding: 0;
 }
 
 .nav-list a {
