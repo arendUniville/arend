@@ -1,15 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
+.title{
+
+    background-color: none;
+
+    position: relative;
+    display: flex;
+    text-align: center;
+
+    
+
+}
+
+.mobile-menu{
+
+    position: absolute;
+    display: none;
+    
+    top: 10px;
+    background: none;
+
+    cursor: pointer;
+
+}
+
+.mobile-menu div{
+
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+
+}
+
 .nav-list{
 
-    top: 0  ;
-    position: absolute;
-    background-color: none;
-    margin-left: 82.3vh;
     margin-top: 10px;
     list-style: none;
+    position: absolute;
+
+    top: 0vh;
+    right: 0;
+    width: 100vw;
+    height: 97vh;
+    padding: 0;
+
+    background: none;
+    z-index: 1;
     display: flex;
+
+    text-align: center;
 
 }
 
@@ -23,7 +65,9 @@
 }
 
 .nav-list li {
+
     display: inline;
+    padding: 0;
 }
 
 .nav-list a {
@@ -61,43 +105,6 @@
 .body{
 
     background-color: #181818;
-
-}
-
-
-
-
-.title{
-
-    background-color: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-
-}
-
-
-
-.mobile-menu{
-
-    position: absolute;
-    display: none;
-    
-    top: 10px;
-    background: none;
-
-    cursor: pointer;
-
-}
-
-.mobile-menu div{
-
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
 
 }
 
@@ -184,10 +191,28 @@
         
     }
 
-
 }
 
 
+.mainEnvolv{
+
+    position: relative;
+
+    /*background-color: #a82014;*/
+
+    margin-top: 100px;
+
+    padding: 10px;
+
+    height: auto;
+    display:block;
+
+    max-width: 1700px;
+    min-width: 320px;
+
+    
+
+}
 
 
 .titlePage {
@@ -197,12 +222,7 @@
     position: relative;
     display: flex;
 
-    margin-top: 100px;
-
     border-radius: 5px;
-
-    max-width: 1700px;
-    min-width: 320px;
 
 }
 
@@ -227,33 +247,19 @@
 
 }
 
-.mainEnvolv{
-
-    position: relative;
-
-    margin-left: 15px;
-    margin-right: 15px;
-
-    padding: 20px;
-
-}
-
 .mainBg{
 
     background-color: #202020;
 
     position: relative;
-    display:inline-flexbox;
+    display:flex;
 
     margin-top: 20px;
     
     padding-top: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
 
     border-radius: 5px;
-
-    max-width: 1700px;
-    min-width: 320px;
 
 }
 
@@ -262,28 +268,46 @@
     /*background-color: red;*/
 
     position: relative;
-    display:flow-root;
+    display:flex;
 
     width: 100%;
-    height: auto;
 
-    padding: 10px;
+    z-index: 1;
+
+
+}
+
+@media (max-width: 1175px){
+
+    .containerSpan{
+
+        /*background-color: red;*/
+    
+        position: relative;
+        display:flow-root;
+    
+        width: 100%;
+    
+        padding: 10px;
+
+        z-index: 0;
+    
+    }
 
 }
 
 .containerSpanCard{
 
-    /*background-color: #181818;*/
+    /*background-color: #1aaa0c;*/
     
     border-radius: 5px;
 
     border: 2px solid #202020;
     
     position: relative;
-    display:inline;
+    display:table;
 
-    width: 300px;
-    height: 115px;
+    width: 285px;
 
     text-align: center;
     
@@ -297,9 +321,9 @@
     border-radius: 5px;
 
     position: relative;
-    display: flex;
+
     
-    top: 5%;
+    margin-top: 5%;
     
     width: 250px;
     height: 100px;
@@ -330,39 +354,20 @@
     height: 50px;
     width: 50px;
 
+
 }
 
 .titleCard {
 
-    background-color: none;
+    /*background-color: blue;*/
 
     position: relative;
     display: flex;
-
-    top: 10%;
-    
-    width: 83.5%;
 
     font-size: 22px;
 
-}
-
-.descriptionCard {
-
-    background-color: none;
-
-    position: relative;
-    display: flex;
-
-    top: 15%;
-
-    width: 83.5%;
-    height: 120px;
-    
-
-    font-size: 12px;
-
-    padding: 10px;
+    margin: 0;
+    height: 35px;
 
 }
 
@@ -388,24 +393,23 @@
 
 .Footer {
 
-    position: relative;
+    background-color: #F26052;
+
+    display: flex; 
     
-    top: 5%;
-    display: flex;
-    width: 99%;
+    width: 100%;
     
 }
 
 .signature {
 
-    position: relative;
-
     color: #535457;
     
-    display: flex;
+    display: block;
     
     outline: none;
     text-decoration: none;
+
 }
 
 .signature:hover {
