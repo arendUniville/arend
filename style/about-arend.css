@@ -1,28 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
-.navHeader{
 
-    position: relative;
-    top: 10px;
+.title{
+
+    background-color: none;
+    display: flex;
+    text-align: center;
+
 }
 
-.navHeader ul {
 
+.mobile-menu{
+
+    position: absolute;
+    display: none;
     
+    top: 10px;
+    background: none;
+
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.mobile-menu div{
+
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+
+}
+
+
+.nav-list{
+    
+    margin-top: 10px;
+    list-style: none;
+    position: absolute;
+    top: 0vh;
+    right: 0;
+    width: 100vw;
+    height: 97vh;
+    background: none;
+    z-index: 1;
+    display: flex;
+
+    text-align: center;
+
+}
+
+.nav-list ul {
+
     list-style: none;
     padding: 0;
 
     text-align: center;
+
 }
 
-.navHeader ul li {
-
+.nav-list li {
     display: inline;
-
 }
 
-.navHeader ul li a {
+.nav-list a {
 
     color: white;
 
@@ -30,14 +73,13 @@
 
     text-decoration: none;
     display: inline;
+
     
 }
 
-.navHeader ul li a:hover {
-
+.nav-list a:hover {
     color: #F26052;
     transition: 0.4s;
-
 }
 
 
@@ -58,7 +100,121 @@
 
     background-color: #181818;
 
+    width: 100%;
+    height: 100%;
+
 }
+
+
+
+
+@media (max-width: 999px){
+
+    body{
+
+        overflow-x: hidden;
+
+    }
+
+    .nav-list{
+
+        position: absolute;
+        top: 0vh;
+        right: 0;
+        width: 50vw;
+        height: 97vh;
+        background: #232323;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        opacity: 0.8;
+        z-index: 1;
+
+    }
+
+    .nav-list li{
+
+        margin-left: 0;
+        opacity: 0;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .mobile-menu{
+
+        display: block;
+
+    }
+
+    .nav-list.active{
+
+        transform: translateX(0);
+
+    }
+
+    @keyframes navLinkFade {
+
+        from{
+
+            opacity: 0;
+            transform: translateX(50px);
+
+        }to{
+
+            opacity: 1;
+            transform: translateX(0);
+
+        }
+    }
+
+    .mobile-menu.active .line1{
+
+        transform: rotate(-45deg) translate(-8px, 8px);
+
+    }
+
+    .mobile-menu.active .line2{
+
+        opacity: 0;
+        
+    }
+
+    .mobile-menu.active .line3{
+
+        transform: rotate(45deg) translate(-5px, -7px);
+        
+    }
+
+
+}
+
+
+
+
+
+.mainEnvolv{
+
+    position: relative;
+
+    /*background-color: #a82014;*/  
+
+    margin-top: 100px;
+
+    padding: 10px;
+
+    height: auto;
+    display:block;
+
+    max-width: 1700px;
+    min-width: 320px;
+
+    z-index: 0;
+
+}
+
 
 .titlePage {
 
@@ -67,11 +223,9 @@
     position: relative;
     display: flex;
 
-    margin-top: 100px;
-
     border-radius: 5px;
 
-    width: 90%; 
+    
 
 }
 
@@ -110,39 +264,36 @@
 
 }
 
-.container{
+.mainBg{
 
     background-color: #202020;
 
     position: relative;
-    display: grid;
+    display:inline-flexbox;
 
-    top: 20px;    
-
-    width: 80%;
-    height: auto;
-
-    margin-bottom: 2%;
+    margin-top: 20px;
+    
+    padding-top: 15px;
+    padding-bottom: 40px;
 
     border-radius: 5px;
+
 
 }
 
 .containerSpan{
 
-    background-color: none;
+    /*background-color: red;*/
 
     position: relative;
-    
-    top: 10px;
+    display:flow-root;
 
+    width: 100%;
     height: auto;
 
     padding: 10px;
-    margin: 30px;
 
 }
-
 .containerSpanCard{
 
     /*background-color: #181818;*/
@@ -266,30 +417,27 @@
 
 /* ---------------------------------------------------------- */
 
-
 .Footer {
 
-    position: absolute;
+
+    background-color: #F26052;
+
+    display: flex; 
     
-    top: 95%;
-    display: block;
-    width: 99%;
+    width: 100%;
     
 }
 
 .signature {
 
-    position: absolute;
 
     color: #535457;
     
     display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    
     outline: none;
     text-decoration: none;
+
 }
 
 .signature:hover {
