@@ -26,8 +26,8 @@ class Particle {
     this.progress = 0;
     this.canvas = canvas;
     this.center = {
-      x: $(window).width() / 2,
-      y: $(window).height() / 2 };
+      x: $(window).width() / 0.2,
+      y: $(window).height() / 0.2 };
 
     this.point_of_attraction = {
       x: $(window).width() / 2,
@@ -64,7 +64,7 @@ class Particle {
   render() {
     this.canvas.beginPath();
     this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    this.canvas.lineWidth = 2;
+    this.canvas.lineWidth = 1;
     this.canvas.fillStyle = this.color;
     this.canvas.fill();
     this.canvas.closePath();

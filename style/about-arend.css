@@ -418,17 +418,28 @@
 
 .Footer {
 
+    /*background-color: #F26052;*/
 
-    background-color: #F26052;
-
+    position:absolute;
     display: flex; 
     
     width: 100%;
+    bottom: 1%;
     
 }
 
-.signature {
+@media (max-height: 890px){
 
+    .Footer {
+    
+        position:relative;
+        
+    }
+    
+
+}
+
+.signature {
 
     color: #535457;
     
