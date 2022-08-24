@@ -241,20 +241,6 @@
     display: flex;
     width: 30px;
 
-    margin-right: 100%;
-
-    top: 18%;
-
-    fill: white;
-
-}
-
-.svgCardTitle{
-
-    position: absolute;
-    display: flex;
-    width: 30px;
-
     right: 10px;
 
     top: 18%;
@@ -262,6 +248,7 @@
     fill: white;
 
 }
+
 
 .mainBg{
 
