@@ -79,7 +79,7 @@
 .title{
 
     background-color: none;
-    display: flex;
+    display: none;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -126,6 +126,12 @@
 
         overflow-x: hidden;
 
+    }
+
+    .title{
+
+        display: flex;
+    
     }
 
     .nav-list{

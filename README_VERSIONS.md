@@ -39,5 +39,5 @@
     09 - [ ] Nos cards que vão para fora do portifolio, colocar o target="_blank" para que abra em outra página.
     10 - [x] No scripts javaScript "Calculator" e "Clicked and showed" colocar adaptativo para celular.
     11 - [ ] Arrumar a tela responsíva que quando está no celular é possível arrastar para o lado e ver a barra do menu.
-    12 - [ ] Colocar o adminHand na página de systems.
+    12 - [x] Colocar o adminHand na página de systems.
     13 - [ ] Fazer um vídeo demonstrando cada um dos scripts.
